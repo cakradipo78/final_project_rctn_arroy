@@ -14,6 +14,7 @@ export default function DetailPage(){
      <>
        <h1>Detail Page</h1>
           
+          <p>xx</p>
            
      
      </>     
