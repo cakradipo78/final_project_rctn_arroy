@@ -3,7 +3,7 @@ import {useSelector, useDispatch} from "react-redux"
 import { apiGetMoviesNowPlaying, apiGetMoviesSearchMovie } from "../store/action"
 // import CardComponent from "../ComponenPages/CardComponent"
 
-import '../../src/app.css'
+import '../../src/App.css'
 
 
 export default function DetailPage(){
