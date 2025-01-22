@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 // import './App.css'
 import HomePage from './Pages/HomePage'
 import {Routes, Route} from "react-router-dom"
-import NavbarComponent from './ComponenPages/NavBarComponent'
+import NavbarComponent from './ComponenPages/NavbarComponent'
 import DetailPage from './Pages/DetailPage'
 
 function App() {
