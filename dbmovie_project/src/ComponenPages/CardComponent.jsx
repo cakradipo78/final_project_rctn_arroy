@@ -1,8 +1,7 @@
 import {useNavigate} from "react-router-dom"
 import{useDispatch} from "react-redux"
 import {apiGetMoviesSDetailMovie} from "../store/action"
-
-
+import '../app.css'
 
 export default function CardComponent({id, popularity, original_title, poster_path, overview}){
 const navigate = useNavigate()
@@ -27,12 +26,19 @@ const navigate = useNavigate()
         <>
       
       <div className="card m-2" style={{width: "18rem"}}>
-      <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} className="card-img-top" alt="..."/>
+      {/* <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} className="card-img-top" alt="..."/> */}
+      <img
+        src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
+        className="card-img-top img-hover"
+        alt={original_title}
+      />
+      
+      
       <div className="card-body">
         <h5 className="card-title">{original_title}</h5>
         <p className="card-text">{popularity}</p>
         <p className="id">{id}</p>
-        {/* <p className="card-text">{overview}</p> */}
+      
         <p className="card-text">
           {overview.length > 100 ? overview.slice(0, 100) + "..." : overview}
         </p>

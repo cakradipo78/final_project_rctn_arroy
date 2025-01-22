@@ -19,7 +19,11 @@ export default function HomePage(){
 
      return (       
      <>
-       <h1>MOVIE HOME PAGE</h1>
+       <h1>
+  {`Discover Your Next Favorite Movie`.split('').map((char, index) => (
+    <span key={index}>{char}</span>
+  ))}
+</h1>
            {/* <p>{JSON.stringify(dataMovies)}</p> */}
        
            <div className="row">

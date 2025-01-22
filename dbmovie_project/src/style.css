@@ -1,0 +1,8 @@
+.img-hover {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-hover:hover {
+    transform: scale(1.05); /* Membesarkan gambar 5% */
+  }
+  
