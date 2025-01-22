@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router-dom"
 import{useDispatch} from "react-redux"
 import {apiGetMoviesSDetailMovie} from "../store/action"
-import '../app.css'
+import '../../src/app.css'
 
 export default function CardComponent({id, popularity, original_title, poster_path, overview}){
 const navigate = useNavigate()
