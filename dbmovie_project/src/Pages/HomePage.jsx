@@ -21,7 +21,7 @@ export default function HomePage(){
      <>
    <div className="container">
   <h1>
-    {`Discover Your Next Favorite Movie`.split('').map((char, index) => (
+    {`Discover Your  Favorite Movie`.split('').map((char, index) => (
       <span key={index}>{char}</span>
     ))}
   </h1>
